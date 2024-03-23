@@ -71,25 +71,57 @@ a {
   align-items: center;
 }
 
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 40px;
+}
+
 .search {
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
+.user-info {
+  display: flex;
+  gap: 10px;
+}
+
 .header img {
   width: 30px;
 }
 
-#avatar-small {
+#avatar-small,
+#avatar-big {
   width: 20%;
+}
+
+.header-bottom button {
+  background-color: #1992d4;
+  border: none;
+  padding: 5px 20px;
+  color: #fff;
+  border-radius: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.greeting {
+  margin-top: 10px;
+}
+
+.greeting p:nth-child(2) {
+  font-weight: bold;
+  margin-top: 5px;
 }
 
 input {
   background-color: #e2e8f0;
   border: none;
   border-radius: 10px;
-  width: 300px;
+  width: 450px;
   height: 25px;
 }
 
