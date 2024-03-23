@@ -138,4 +138,58 @@ input {
 .content {
   grid-area: content;
   background: #e2e8f0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    'projects announcement'
+    'projects trending';
+  padding-bottom: 0;
+}
+
+.projects-container {
+  grid-area: projects;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project {
+  border-left: 8px solid orange;
+  margin: 20px 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.project p,
+.announcements p {
+  color: #636363;
+  font-size: 0.8rem;
+}
+
+.project-icons {
+  width: 40%;
+  margin-top: 10px;
+  float: right;
+}
+
+.announcements,
+.trending {
+  background-color: #fff;
+  margin: 20px 10px;
+  border-radius: 8px;
+  padding: 20px 30px;
+  height: max-content;
+}
+
+.announcements p {
+  margin-bottom: 20px;
+}
+
+hr {
+  margin-bottom: 20px;
+}
+
+#trending-img {
+  width: 80%;
 }
