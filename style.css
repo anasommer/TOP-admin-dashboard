@@ -62,11 +62,44 @@ a {
 /* HEADER */
 .header {
   grid-area: header;
+  margin-top: 20px;
 }
 
 .header-top {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header img {
+  width: 30px;
+}
+
+#avatar-small {
+  width: 20%;
+}
+
+input {
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  height: 25px;
+}
+
+.user {
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 /* MAIN CONTENT */
